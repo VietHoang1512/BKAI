@@ -1,0 +1,876 @@
+smart.home.decrease.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O O
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O O
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O
+smart.home.decrease.percentage, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O B-roomroom O
+smart.home.decrease.percentage, B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.decrease.percentage, O O B-commandcommand I-commandcommand O B-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, O B-devicedevice I-devicedevice O B-roomroom I-roomroom O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O
+smart.home.decrease.percentage, O O B-devicedevice O B-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.decrease.percentage, O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.level, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.decrease.percentage, O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O B-roomroom O
+smart.home.decrease.percentage, O O O O O O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.decrease.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.decrease.level, O O O O O B-devicedevice O
+smart.home.decrease.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O O
+smart.home.decrease.percentage, O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O B-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.set.percentage, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.decrease.percentage, B-devicedevice I-devicedevice I-devicedevice O O O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.decrease.percentage, O O O B-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.decrease.percentage, O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O O
+smart.home.decrease.percentage, O O O O O O O O O B-roomroom I-roomroom I-roomroom
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O O
+smart.home.decrease.percentage, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.decrease.percentage, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O O O O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.decrease.percentage, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.decrease.percentage, O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.level, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.set.percentage, O B-devicedevice I-devicedevice O B-roomroom I-roomroom O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, B-devicedevice I-devicedevice I-devicedevice O O O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O B-roomroom O
+smart.home.decrease.percentage, O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.decrease.percentage, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, B-commandcommand I-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice O B-change-valuesyspercentage I-change-valuesyspercentage I-change-valuesyspercentage
+smart.home.decrease.percentage, O O B-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O O O O O O O B-roomroom I-roomroom I-roomroom
+smart.home.decrease.percentage, O O O O O O O O O B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice O O O O O O O
+smart.home.decrease.percentage, O O B-commandcommand I-commandcommand O B-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom
+smart.home.decrease.percentage, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.check.status, O O O O O B-devicedevice O B-roomroom I-roomroom I-roomroom O B-roomroom O
+smart.home.decrease.percentage, O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.decrease.percentage, B-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice O B-change-valuesyspercentage I-change-valuesyspercentage I-change-valuesyspercentage
+smart.home.decrease.percentage, O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.level, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.decrease.percentage, O O O O O O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.decrease.percentage, O O O O O O O O O B-roomroom I-roomroom I-roomroom
+smart.home.decrease.percentage, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom O B-change-valuesyspercentage I-change-valuesyspercentage I-change-valuesyspercentage
+smart.home.decrease.percentage, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O O O O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.level, O O O O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.decrease.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O O
+smart.home.set.percentage, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.decrease.percentage, B-commandcommand I-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, O O O O O O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.decrease.percentage, B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.decrease.percentage, O O O B-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O B-roomroom O
+smart.home.device.onoff, O O O B-commandcommand O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O O O O
+smart.home.device.onoff, B-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O O O O O O O
+smart.home.device.onoff, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.device.onoff, B-commandcommand O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O O O O O O O
+smart.home.device.onoff, O O O B-commandcommand O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O O O O O
+smart.home.device.onoff, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O
+smart.home.device.onoff, B-commandcommand O B-devicedevice O B-devicedevice I-devicedevice I-devicedevice B-roomroom
+smart.home.device.onoff, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, O O O B-commandcommand B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.set.level, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.device.onoff, O O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice O B-roomroom I-roomroom
+smart.home.set.level, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.device.onoff, O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O O O
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice I-devicedevice O O
+smart.home.device.onoff, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice
+smart.home.device.onoff, O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.device.onoff, B-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.set.level, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.device.onoff, B-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice I-devicedevice O O
+smart.home.device.onoff, B-commandcommand B-allall B-devicedevice B-devicedevice I-devicedevice I-devicedevice O
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice B-roomroom
+smart.home.device.onoff, B-commandcommand B-allall B-devicedevice B-devicedevice I-devicedevice I-devicedevice O
+smart.home.device.onoff, O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O O
+smart.home.device.onoff, O O O B-commandcommand B-devicedevice I-devicedevice O B-roomroom I-roomroom
+greeting, O O O O
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-roomroom I-roomroom I-roomroom O
+smart.home.device.onoff, O O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.set.percentage, O O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice O O
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice B-roomroom I-roomroom
+smart.home.device.onoff, O B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.device.onoff, O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, O O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O
+smart.home.device.onoff, O O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom
+smart.home.device.onoff, O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom O
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, O O O B-commandcommand O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O O O O
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, B-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom
+smart.home.device.onoff, O B-commandcommand B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom
+smart.home.set.percentage, O O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, O O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O
+smart.home.device.onoff, B-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O O O O O O O O
+smart.home.device.onoff, O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O O O
+smart.home.device.onoff, B-commandcommand O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.set.level, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.device.onoff, O O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, O B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom
+smart.home.device.onoff, O O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O
+smart.home.device.onoff, B-commandcommand B-allall B-devicedevice B-devicedevice I-devicedevice I-devicedevice O
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice O
+smart.home.set.level, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.device.onoff, B-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom
+smart.home.device.onoff, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-roomroom I-roomroom I-roomroom O
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.device.onoff, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice
+smart.home.device.onoff, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice
+smart.home.device.onoff, B-commandcommand O O O B-devicedevice I-devicedevice O B-roomroom
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom
+smart.home.device.onoff, O O B-commandcommand B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice O O
+smart.home.device.onoff, O O O B-commandcommand B-devicedevice I-devicedevice O B-roomroom I-roomroom O
+smart.home.device.onoff, O O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom O
+smart.home.device.onoff, B-commandcommand O B-devicedevice I-devicedevice B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-roomroom I-roomroom O
+smart.home.device.onoff, O O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.device.onoff, B-commandcommand O B-devicedevice I-devicedevice B-devicedevice I-devicedevice I-devicedevice B-roomroom
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O
+smart.home.device.onoff, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O
+smart.home.device.onoff, B-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.set.percentage, O O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O
+smart.home.device.onoff, O O B-commandcommand O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O O
+smart.home.device.onoff, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O O
+smart.home.decrease.level, B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-commandcommand I-commandcommand O O B-final-valuesysnumber
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O O O
+smart.home.decrease.level, O O O B-devicedevice O O B-sysnumbersysnumber
+smart.home.decrease.level, O O O O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O O
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber O B-sysnumbersysnumber
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O
+smart.home.increase.level, B-commandcommand O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-change-valuesysnumber O O
+smart.home.decrease.level, O O O O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O O
+smart.home.increase.level, B-commandcommand O B-commandcommand I-commandcommand B-devicedevice O B-change-valuesysnumber O O
+smart.home.decrease.level, B-devicedevice I-devicedevice I-devicedevice B-commandcommand I-commandcommand O O B-final-valuesysnumber
+smart.home.decrease.level, B-commandcommand I-commandcommand B-allall B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O O B-final-valuesysnumber
+smart.home.decrease.level, B-devicedevice I-devicedevice I-devicedevice B-commandcommand I-commandcommand O O B-final-valuesysnumber
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber O O B-sysnumbersysnumber O O
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O O O O O O
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O O
+smart.home.set.percentage, B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice O O
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O O O O O
+smart.home.decrease.level, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-change-valuesysnumber O
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O
+smart.home.decrease.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O O B-final-valuesysnumber
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber B-roomroom I-roomroom I-roomroom I-roomroom O O
+smart.home.decrease.level, B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-commandcommand O O B-final-valuesysnumber
+smart.home.decrease.level, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-change-valuesysnumber O
+smart.home.decrease.level, O B-devicedevice I-devicedevice B-sysnumbersysnumber B-roomroom I-roomroom I-roomroom O B-sysnumbersysnumber
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice O O
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice O B-sysnumbersysnumber O O O O O O
+smart.home.decrease.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O B-change-valuesysnumber O
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O
+smart.home.set.percentage, B-devicedevice I-devicedevice I-devicedevice
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice O O O
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O O O O O O
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O O O
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O O
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.decrease.level, B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom B-commandcommand I-commandcommand O O B-final-valuesysnumber
+smart.home.decrease.level, O B-devicedevice I-devicedevice O O B-sysnumbersysnumber O O O
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice O O
+smart.home.decrease.level, B-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber B-commandcommand I-commandcommand O O B-final-valuesysnumber
+smart.home.decrease.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice B-floornumberfloornumber O B-change-valuesysnumber O
+smart.home.decrease.level, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O O
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O O O O O
+smart.home.decrease.level, B-devicedevice I-devicedevice B-commandcommand I-commandcommand O O B-final-valuesysnumber
+smart.home.decrease.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O B-change-valuesysnumber O
+smart.home.increase.level, B-commandcommand I-commandcommand B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-change-valuesysnumber O O
+smart.home.decrease.level, B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-commandcommand O O B-final-valuesysnumber
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O O O
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O O O O O
+smart.home.decrease.level, O O O O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O O
+smart.home.set.percentage, B-devicedevice I-devicedevice I-devicedevice
+smart.home.decrease.level, B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-commandcommand I-commandcommand O O B-final-valuesysnumber
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber B-roomroom I-roomroom I-roomroom I-roomroom O O
+smart.home.increase.level, B-commandcommand I-commandcommand B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-change-valuesysnumber O O
+smart.home.decrease.level, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber
+smart.home.decrease.level, O O O B-devicedevice I-devicedevice O O B-sysnumbersysnumber
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.decrease.level, O O B-sysnumbersysnumber B-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber O O
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber O B-sysnumbersysnumber
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O
+smart.home.decrease.level, O O O O O B-devicedevice I-devicedevice O O B-sysnumbersysnumber O O
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber O O B-sysnumbersysnumber O O
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O O O O O O
+smart.home.decrease.level, O O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber
+smart.home.decrease.level, O O O O O O O O B-devicedevice O O
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O O O
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber O B-sysnumbersysnumber
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O O O
+smart.home.set.percentage, B-devicedevice I-devicedevice I-devicedevice
+smart.home.decrease.level, O B-devicedevice I-devicedevice O O B-sysnumbersysnumber O O O
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice O O B-sysnumbersysnumber O O O O O
+smart.home.decrease.level, O O O O B-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice O O O O O O
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.decrease.level, O O O B-devicedevice O O B-sysnumbersysnumber
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber B-roomroom I-roomroom I-roomroom I-roomroom O O
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O O O O O
+smart.home.decrease.level, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O O O O O O
+smart.home.set.percentage, B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.decrease.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber O O B-sysnumbersysnumber O O
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O O O
+smart.home.decrease.level, O B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber O B-sysnumbersysnumber
+smart.home.increase.percentage, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O O O O O O O O O
+smart.home.increase.level, B-commandcommand B-devicedevice I-devicedevice B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O B-change-valuesysnumber O O O
+smart.home.increase.level, O O O O O O O O B-devicedevice I-devicedevice O B-sysnumbersysnumber O
+smart.home.increase.level, O O O O B-devicedevice I-devicedevice I-devicedevice O O O B-sysnumbersysnumber O O O
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O O B-final-valuesysnumber O O O
+smart.home.increase.percentage, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O O O O O O O O O
+smart.home.increase.percentage, O O O O O O B-devicedevice I-devicedevice O O O O O O O O O O O O O O O
+smart.home.increase.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O O B-final-valuesysnumber O O
+smart.home.increase.level, O O O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O
+smart.home.increase.percentage, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O O O O O O O O O
+smart.home.increase.level, O O O O O O O O O O B-devicedevice I-devicedevice O O O O O O O
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-floornumberfloornumber I-floornumberfloornumber O B-change-valuesysnumber O O O
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice O O O B-final-valuesysnumber
+smart.home.increase.level, O B-devicedevice I-devicedevice O O O
+smart.home.increase.level, O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O
+smart.home.increase.level, O O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice O O O O O O O
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O O B-final-valuesysnumber
+smart.home.increase.level, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-final-valuesysnumber O O
+smart.home.increase.level, O O O O O O B-devicedevice I-devicedevice B-sysnumbersysnumber O O O O
+smart.home.increase.level, O B-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O B-roomroom I-roomroom
+smart.home.increase.level, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom O B-change-valuesysnumber O
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.increase.level, O O O O O O O O B-devicedevice I-devicedevice O B-sysnumbersysnumber O
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom O O B-final-valuesysnumber O O O
+smart.home.increase.level, O O O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O
+smart.home.set.level, O B-commandcommand O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber O
+smart.home.increase.level, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O
+smart.home.increase.level, B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom B-commandcommand I-commandcommand O B-change-valuesysnumber O
+smart.home.increase.level, O O O O B-devicedevice I-devicedevice O O O B-sysnumbersysnumber O O O
+smart.home.set.level, O B-commandcommand O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber O
+smart.home.increase.level, O O B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O B-final-valuesysnumber O
+smart.home.increase.level, O O B-commandcommand I-commandcommand O O B-roomroom I-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber O O
+smart.home.set.level, O B-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber O
+smart.home.increase.level, O O O O B-devicedevice I-devicedevice O O O B-sysnumbersysnumber O O O
+smart.home.increase.percentage, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O O O O O O O O O
+smart.home.increase.level, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom O B-change-valuesysnumber O
+smart.home.increase.level, O O O O O O O O O O B-devicedevice I-devicedevice O O O O O O O
+smart.home.increase.level, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.increase.level, B-commandcommand O O B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O O B-final-valuesysnumber O O
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O B-change-valuesysnumber O O O
+smart.home.increase.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O B-final-valuesysnumber
+smart.home.increase.level, O B-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.increase.level, O B-commandcommand O O O B-devicedevice I-devicedevice O B-roomroom O O B-sysnumbersysnumber O
+smart.home.increase.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-floornumberfloornumber I-floornumberfloornumber O B-change-valuesysnumber O O O
+smart.home.increase.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O O B-final-valuesysnumber O O
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O O B-final-valuesysnumber
+smart.home.increase.level, O O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.increase.level, O O O O O O O O O O B-devicedevice I-devicedevice O O O O O O O
+smart.home.increase.level, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-change-valuesysnumber O
+smart.home.increase.level, O O B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-final-valuesysnumber O
+smart.home.increase.level, O O O O O O B-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber O O O O
+smart.home.increase.level, O O O O O O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O B-roomroom I-roomroom I-roomroom O
+smart.home.increase.level, O O O O O O O B-devicedevice I-devicedevice O O B-sysnumbersysnumber O B-roomroom I-roomroom I-roomroom O
+smart.home.increase.level, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.increase.level, O B-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O B-roomroom I-roomroom I-roomroom
+smart.home.increase.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O B-final-valuesysnumber
+smart.home.increase.level, O O O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O O B-final-valuesysnumber
+smart.home.increase.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice O O B-final-valuesysnumber
+smart.home.increase.level, O O O O O O O B-devicedevice I-devicedevice O O B-sysnumbersysnumber O B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O O B-final-valuesysnumber O O O
+smart.home.increase.level, O B-devicedevice I-devicedevice O O O
+smart.home.increase.level, B-devicedevice I-devicedevice I-devicedevice B-roomroom B-commandcommand I-commandcommand O B-change-valuesysnumber O
+smart.home.increase.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O
+smart.home.increase.level, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber O O O O
+smart.home.increase.level, O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O B-sysnumbersysnumber O
+smart.home.increase.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O B-change-valuesysnumber O O O
+smart.home.increase.level, O O B-commandcommand O O B-roomroom I-roomroom O O B-sysnumbersysnumber O O
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O B-change-valuesysnumber O O O
+smart.home.increase.level, O O O O O O B-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber O O O O
+smart.home.increase.level, O O O O O O O O B-devicedevice I-devicedevice O B-sysnumbersysnumber O
+smart.home.set.level, O B-commandcommand O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber O
+smart.home.increase.level, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.increase.level, O O B-commandcommand I-commandcommand O O B-roomroom I-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber O O
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O O O B-final-valuesysnumber
+smart.home.increase.level, O O O O B-devicedevice I-devicedevice O O O B-sysnumbersysnumber O O O
+smart.home.increase.level, O O B-commandcommand B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-change-valuesysnumber O
+smart.home.increase.level, O O O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O O B-final-valuesysnumber O O O
+smart.home.increase.level, O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O B-roomroom I-roomroom O
+smart.home.increase.level, O O B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-final-valuesysnumber O
+smart.home.increase.level, B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-commandcommand I-commandcommand O B-change-valuesysnumber O
+smart.home.increase.level, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber O O O O
+smart.home.increase.level, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-change-valuesysnumber O
+smart.home.increase.level, O O O O B-devicedevice I-devicedevice O O O B-sysnumbersysnumber O O O
+smart.home.increase.level, O B-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.increase.level, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.increase.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O B-final-valuesysnumber
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O O B-final-valuesysnumber O O O
+smart.home.increase.level, B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom B-commandcommand I-commandcommand O B-change-valuesysnumber O
+smart.home.increase.level, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O
+smart.home.increase.level, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O B-roomroom I-roomroom I-roomroom
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O O O B-final-valuesysnumber
+smart.home.increase.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom O O B-final-valuesysnumber
+smart.home.increase.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O B-final-valuesysnumber
+smart.home.set.percentage, B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.level, O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.set.percentage, O O O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.set.percentage, B-commandcommand B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-devicedevice I-devicedevice
+smart.home.set.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage B-roomroom I-roomroom I-roomroom
+smart.home.device.onoff, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.set.level, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice
+smart.home.set.level, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice
+smart.home.set.percentage, O O O O O O O O B-commandcommand O O B-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom O
+smart.home.set.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.set.percentage, B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, O O O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.set.level, O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.set.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, O O O O O O O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom I-roomroom O
+smart.home.set.percentage, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.set.percentage, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.set.level, O B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom
+smart.home.set.percentage, B-commandcommand O O B-devicedevice I-devicedevice O
+smart.home.set.percentage, B-commandcommand O O B-devicedevice I-devicedevice O
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom
+smart.home.set.percentage, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.set.percentage, O O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-floornumberfloornumber
+smart.home.set.percentage, O O O O O O O O B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-floornumberfloornumber O
+smart.home.set.percentage, O O O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.device.onoff, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.set.percentage, O B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.set.level, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice
+smart.home.set.percentage, O O O O O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, O O O B-devicedevice I-devicedevice
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage B-roomroom I-roomroom I-roomroom
+smart.home.set.percentage, B-commandcommand B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.set.level, O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.set.percentage, O O O O O O O O B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom O
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.set.percentage, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.set.percentage, O O O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.set.percentage, O O O O O O O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom I-roomroom O
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.set.percentage, O O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom I-roomroom
+smart.home.set.percentage, B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, B-commandcommand I-commandcommand B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom I-roomroom
+smart.home.set.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom I-roomroom
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage B-roomroom I-roomroom
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice B-roomroom B-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom I-roomroom
+smart.home.set.percentage, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.set.level, O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom
+smart.home.set.percentage, O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom B-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, O O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.set.percentage, O O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice O
+smart.home.set.level, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.set.percentage, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.set.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.percentage, O O O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.set.percentage, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.set.percentage, O B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.set.percentage, B-commandcommand O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.set.percentage, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.set.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage B-roomroom I-roomroom I-roomroom
+smart.home.set.percentage, O O O B-devicedevice I-devicedevice
+smart.home.set.percentage, B-commandcommand B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.set.percentage, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.set.percentage, O O O O B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice O O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.set.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, B-commandcommand I-commandcommand B-allall B-devicedevice B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.increase.percentage, O B-devicedevice I-devicedevice I-devicedevice B-change-valuesyspercentage I-change-valuesyspercentage I-change-valuesyspercentage O B-roomroom I-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber
+smart.home.increase.percentage, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom I-roomroom O B-floornumberfloornumber I-floornumberfloornumber O
+smart.home.increase.percentage, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O
+smart.home.increase.percentage, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber O
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O B-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.level, O O O O O O B-devicedevice I-devicedevice I-devicedevice O O
+smart.home.increase.percentage, B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-commandcommand I-commandcommand O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.level, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.increase.percentage, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-change-valuesyspercentage I-change-valuesyspercentage O
+smart.home.increase.percentage, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, B-commandcommand I-commandcommand B-allall B-devicedevice B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-floornumberfloornumber I-floornumberfloornumber O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-floornumberfloornumber I-floornumberfloornumber O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.check.status, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.increase.percentage, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom O B-change-valuesyspercentage I-change-valuesyspercentage I-change-valuesyspercentage O
+smart.home.increase.level, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O O
+smart.home.increase.percentage, O B-devicedevice I-devicedevice I-devicedevice B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.increase.percentage, O O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-change-valuesyspercentage I-change-valuesyspercentage I-change-valuesyspercentage O
+smart.home.increase.percentage, B-commandcommand I-commandcommand B-allall B-devicedevice B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O B-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O
+smart.home.increase.percentage, B-commandcommand I-commandcommand B-allall B-devicedevice B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.check.status, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-floornumberfloornumber I-floornumberfloornumber O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom I-roomroom I-roomroom O B-floornumberfloornumber I-floornumberfloornumber O
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O B-change-valuesyspercentage I-change-valuesyspercentage I-change-valuesyspercentage O O
+smart.home.increase.percentage, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O B-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O
+smart.home.increase.percentage, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.increase.percentage, B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom B-commandcommand I-commandcommand O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber O
+smart.home.increase.percentage, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber
+smart.home.increase.percentage, O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber O
+smart.home.increase.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.check.status, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O B-roomroom I-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom O B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O
+smart.home.increase.percentage, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom B-commandcommand I-commandcommand O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-change-valuesyspercentage I-change-valuesyspercentage I-change-valuesyspercentage O B-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber
+smart.home.increase.percentage, B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-commandcommand O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.increase.percentage, B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-commandcommand I-commandcommand O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.level, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O
+smart.home.increase.percentage, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-floornumberfloornumber I-floornumberfloornumber O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.increase.percentage, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O B-roomroom I-roomroom O B-floornumberfloornumber I-floornumberfloornumber O
+smart.home.increase.percentage, O O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.increase.percentage, O O O O B-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.check.status, O B-devicedevice I-devicedevice
+smart.home.increase.level, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O O
+smart.home.check.status, O B-devicedevice I-devicedevice
+smart.home.increase.percentage, O O O O O O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O O
+smart.home.increase.percentage, O O O O O B-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage O
+smart.home.increase.percentage, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom O B-final-valuesyspercentage I-final-valuesyspercentage I-final-valuesyspercentage
+smart.home.set.color, O O O O O O I-devicedevice O B-colorcolor O
+smart.home.set.color, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice I-devicedevice B-roomroom B-floornumberfloornumber I-floornumberfloornumber O B-colorcolor I-colorcolor
+smart.home.set.color, O O B-commandcommand I-commandcommand O B-devicedevice I-devicedevice O O O
+smart.home.set.color, B-colorcolor I-colorcolor O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.set.color, B-commandcommand B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-floornumberfloornumber O B-colorcolor I-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O B-colorcolor
+smart.home.set.color, O O O O B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, O O B-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.set.color, B-commandcommand I-commandcommand I-commandcommand I-colorcolor O B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber
+smart.home.set.color, O O O O I-commandcommand I-commandcommand B-devicedevice O B-colorcolor I-colorcolor O
+smart.home.set.color, B-commandcommand I-commandcommand B-colorcolor I-colorcolor I-colorcolor O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber
+smart.home.set.color, B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, O O O O O O B-commandcommand I-commandcommand O B-devicedevice I-devicedevice O O O
+smart.home.set.color, B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O B-colorcolor
+smart.home.set.color, B-colorcolor I-colorcolor O O O B-devicedevice I-devicedevice
+smart.home.set.color, O O O O B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, O O O O O O I-devicedevice O B-colorcolor I-colorcolor I-colorcolor O
+smart.home.set.color, O O B-commandcommand I-commandcommand B-devicedevice B-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand B-colorcolor I-colorcolor O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor O O
+smart.home.set.color, B-commandcommand I-commandcommand I-commandcommand B-allall B-devicedevice B-devicedevice I-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor I-colorcolor I-colorcolor O O
+smart.home.set.color, O O O O O O B-devicedevice I-devicedevice O B-colorcolor I-colorcolor O
+smart.home.set.color, O O O O O O O B-commandcommand I-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O O
+smart.home.set.color, O O B-commandcommand I-commandcommand B-devicedevice O O B-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand B-allall B-devicedevice B-devicedevice I-devicedevice B-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand O B-devicedevice I-devicedevice O B-colorcolor O O
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice I-devicedevice O B-colorcolor
+smart.home.set.color, B-commandcommand B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber O B-colorcolor I-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor O
+smart.home.set.color, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O O B-colorcolor I-colorcolor
+smart.home.set.color, O O O B-commandcommand I-commandcommand I-commandcommand O B-devicedevice I-devicedevice O B-colorcolor I-colorcolor I-colorcolor O B-floornumberfloornumber I-floornumberfloornumber B-roomroom I-roomroom I-roomroom O O
+smart.home.set.color, O O B-commandcommand I-commandcommand I-commandcommand I-commandcommand B-devicedevice O B-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, O O O B-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand B-colorcolor O B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-floornumberfloornumber
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand B-devicedevice I-devicedevice B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O B-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand B-allall B-devicedevice B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor I-colorcolor I-colorcolor O O
+smart.home.set.color, O O O B-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-colorcolor I-colorcolor O B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber B-roomroom I-roomroom I-roomroom O O
+smart.home.set.color, O O B-commandcommand O B-devicedevice I-devicedevice O O O
+smart.home.set.color, O O B-devicedevice I-devicedevice I-devicedevice O B-colorcolor O O O O O O O O O B-change-valuesysnumber O O O B-devicedevice I-devicedevice I-devicedevice B-devicedevice O B-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, O O B-commandcommand I-commandcommand B-devicedevice O B-colorcolor I-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, O O O O O O O B-commandcommand I-commandcommand I-commandcommand I-commandcommand O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O
+smart.home.set.color, O O O O O O O B-commandcommand I-commandcommand I-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O O
+smart.home.set.color, O O O O B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand I-commandcommand B-devicedevice I-devicedevice B-roomroom I-roomroom O B-colorcolor I-colorcolor I-colorcolor O O
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O B-colorcolor I-colorcolor
+smart.home.set.color, O O B-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.set.color, O O B-commandcommand B-devicedevice I-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, B-devicedevice B-colorcolor O B-devicedevice I-devicedevice O B-roomroom B-commandcommand B-commandcommand I-commandcommand I-commandcommand O B-floornumberfloornumber I-floornumberfloornumber
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber O B-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice I-devicedevice B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O B-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber O B-colorcolor I-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, B-colorcolor O O O B-devicedevice I-devicedevice
+smart.home.set.color, O O O O O O O I-commandcommand I-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice I-devicedevice O B-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand B-allall B-devicedevice B-devicedevice I-devicedevice B-colorcolor
+smart.home.set.color, O O B-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor O O O O O O O O O B-change-valuesysnumber O O O B-devicedevice I-devicedevice O B-devicedevice O B-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand B-colorcolor I-colorcolor O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-commandcommand B-commandcommand I-commandcommand I-commandcommand O B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber
+smart.home.set.color, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice O O B-colorcolor I-colorcolor
+smart.home.set.color, O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor O O O O O O O O O B-change-valuesysnumber O O O B-devicedevice I-devicedevice O B-devicedevice O B-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, O O B-commandcommand I-commandcommand O B-devicedevice I-devicedevice O B-colorcolor I-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand O B-colorcolor O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-commandcommand B-commandcommand I-commandcommand O B-floornumberfloornumber
+smart.home.set.color, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor O
+smart.home.set.color, O O O O O O O B-commandcommand O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O O
+smart.home.set.color, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, O O B-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom O B-colorcolor I-colorcolor O O
+smart.home.set.color, O O B-commandcommand I-commandcommand B-devicedevice O I-colorcolor
+smart.home.set.color, O O B-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, O O O B-commandcommand O B-devicedevice O O B-colorcolor I-colorcolor I-colorcolor I-colorcolor O B-floornumberfloornumber I-floornumberfloornumber B-roomroom I-roomroom I-roomroom I-roomroom O O
+smart.home.set.color, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice O B-colorcolor I-colorcolor I-colorcolor O
+smart.home.set.color, O O B-devicedevice I-devicedevice O B-colorcolor I-colorcolor O O O O O O O O O B-change-valuesysnumber O O O B-devicedevice I-devicedevice O B-devicedevice O B-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, O O O I-colorcolor O B-colorcolor
+smart.home.set.color, B-commandcommand B-colorcolor I-colorcolor O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-commandcommand B-commandcommand I-commandcommand I-commandcommand I-commandcommand O B-floornumberfloornumber I-floornumberfloornumber
+smart.home.set.color, O O O O O O O B-commandcommand I-commandcommand I-commandcommand I-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O O
+smart.home.set.color, B-colorcolor O O O B-devicedevice I-devicedevice
+smart.home.set.color, B-commandcommand I-commandcommand B-colorcolor I-colorcolor I-colorcolor O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber
+smart.home.set.color, B-commandcommand O B-devicedevice I-devicedevice O B-colorcolor O O
+smart.home.set.color, B-colorcolor I-colorcolor O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, O O B-commandcommand O B-devicedevice I-devicedevice O O O
+smart.home.set.color, O O O B-commandcommand I-commandcommand O B-devicedevice I-devicedevice O O B-colorcolor I-colorcolor I-colorcolor I-colorcolor O B-floornumberfloornumber B-roomroom I-roomroom I-roomroom O O
+smart.home.set.color, B-commandcommand I-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber O B-colorcolor I-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, O O O O O O B-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.set.color, B-commandcommand B-colorcolor O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-commandcommand B-commandcommand I-commandcommand O B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber
+smart.home.set.color, O O B-commandcommand I-commandcommand I-commandcommand B-devicedevice I-devicedevice O B-colorcolor I-colorcolor
+smart.home.set.color, O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice O B-colorcolor O
+smart.home.set.color, O O B-commandcommand O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O B-colorcolor I-colorcolor I-colorcolor O O
+smart.home.set.color, O O B-devicedevice O B-colorcolor I-colorcolor O O O O O O O O O B-change-valuesysnumber O O O B-devicedevice I-devicedevice O B-devicedevice O I-colorcolor I-colorcolor I-colorcolor
+smart.home.set.color, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-floornumberfloornumber I-floornumberfloornumber O B-colorcolor I-colorcolor
+smart.home.set.color, O O O B-commandcommand O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-colorcolor O B-floornumberfloornumber I-floornumberfloornumber I-floornumberfloornumber B-roomroom I-roomroom I-roomroom O O
+smart.home.set.color, B-commandcommand I-commandcommand O B-devicedevice I-devicedevice I-devicedevice O B-colorcolor I-colorcolor O O
+smart.home.set.color, O O O B-devicedevice I-devicedevice O B-colorcolor I-colorcolor I-colorcolor I-colorcolor
+smart.home.check.status, B-commandcommand O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice O
+smart.home.check.status, O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.check.status, O O O O O O O B-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice
+smart.home.check.status, O O O O O O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O O
+smart.home.check.status, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.check.status, B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-statusstatus I-statusstatus
+smart.home.check.status, O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice
+smart.home.check.status, B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-statusstatus I-statusstatus I-statusstatus
+smart.home.check.status, O O O O O O O B-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.set.level, O B-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O O O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.set.level, O B-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O O O O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O B-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O O O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.set.level, O B-commandcommand O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O O O
+smart.home.check.status, B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom B-statusstatus B-statusstatus I-statusstatus I-commandcommand O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.check.status, B-devicedevice I-devicedevice B-statusstatus I-statusstatus I-statusstatus
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.check.status, O O B-devicedevice I-devicedevice B-roomroom I-roomroom
+smart.home.check.status, B-devicedevice I-devicedevice B-statusstatus I-statusstatus
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O O O B-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-statusstatus I-statusstatus I-statusstatus O O
+smart.home.check.status, O O O O O O O B-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O B-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O O O B-devicedevice I-devicedevice
+smart.home.check.status, B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice
+smart.home.check.status, O O O O O O O B-roomroom I-roomroom
+smart.home.check.status, O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O B-devicedevice I-devicedevice
+smart.home.check.status, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-roomroom I-roomroom I-roomroom O O O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.set.level, O B-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O O O
+smart.home.check.status, B-commandcommand O B-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.check.status, O O O O O O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.check.status, O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.check.status, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O O
+smart.home.check.status, O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, O O O O B-devicedevice I-devicedevice
+smart.home.check.status, B-commandcommand I-commandcommand B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O B-devicedevice I-devicedevice
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O
+smart.home.check.status, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.check.status, O O O O O O O B-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, B-devicedevice I-devicedevice I-devicedevice B-roomroom B-floornumberfloornumber B-statusstatus B-statusstatus I-statusstatus I-statusstatus O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O
+smart.home.check.status, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-roomroom I-roomroom I-roomroom O O O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice O O O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.check.status, B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.check.status, B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom O
+smart.home.check.status, B-devicedevice I-devicedevice I-devicedevice B-statusstatus I-statusstatus I-statusstatus
+smart.home.check.status, O O O O O O O O O B-devicedevice I-devicedevice O O B-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O O O B-devicedevice I-devicedevice
+smart.home.check.status, O O O O O O O O O B-devicedevice I-devicedevice O O B-roomroom I-roomroom O O O
+smart.home.check.status, O O B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.check.status, O O O O O O O O O B-devicedevice I-devicedevice O O B-roomroom I-roomroom I-roomroom I-roomroom O O O
+smart.home.check.status, B-commandcommand I-commandcommand B-devicedevice I-devicedevice
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.check.status, O O B-devicedevice I-devicedevice O O O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice O O O O O O O
+smart.home.check.status, O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O O O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, O O B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom
+smart.home.check.status, O O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-statusstatus I-statusstatus O O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.check.status, O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O
+smart.home.check.status, O O O O O O B-devicedevice I-devicedevice O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom B-floornumberfloornumber O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.set.level, O B-commandcommand O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O B-commandcommand O O
+smart.home.check.status, O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.increase.percentage, B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom O
+smart.home.check.status, O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O
+smart.home.set.level, O O B-commandcommand O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice O O O O O B-roomroom I-roomroom I-roomroom
+smart.home.set.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-floornumberfloornumber O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom O B-final-valuesysnumber
+smart.home.set.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-sysnumbersysnumber O
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.set.level, B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O B-final-valuesysnumber
+smart.home.set.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O B-final-valuesysnumber
+smart.home.device.onoff, B-commandcommand O O O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.set.level, O B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O
+smart.home.set.level, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice O B-final-valuesysnumber
+smart.home.set.level, O O B-commandcommand O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice O O O O O B-roomroom I-roomroom I-roomroom I-roomroom
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice O O B-final-valuesysnumber O
+smart.home.set.level, O O B-commandcommand B-devicedevice I-devicedevice O B-final-valuesysnumber
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O B-sysnumbersysnumber
+smart.home.set.level, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom B-commandcommand I-commandcommand O O O O O O O O O B-sysnumbersysnumber O
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O O O
+smart.home.set.level, B-commandcommand B-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O O O
+smart.home.set.level, O O O O O O O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O O O O O
+smart.home.device.onoff, B-commandcommand O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesysnumber
+smart.home.set.level, B-commandcommand I-commandcommand O O O B-devicedevice I-devicedevice O O B-commandcommand O
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber O B-roomroom B-floornumberfloornumber O O O O O
+smart.home.set.level, B-commandcommand I-commandcommand O O O B-devicedevice I-devicedevice O O B-commandcommand O
+smart.home.set.level, B-commandcommand O O O B-devicedevice I-devicedevice B-sysnumbersysnumber O B-roomroom I-roomroom I-roomroom I-roomroom O O O O O
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom B-floornumberfloornumber O O
+smart.home.set.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O B-sysnumbersysnumber
+smart.home.set.level, B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesysnumber
+smart.home.set.level, B-commandcommand I-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O O O O
+smart.home.set.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.set.level, O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-final-valuesysnumber
+smart.home.device.onoff, B-commandcommand O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice
+smart.home.set.level, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.set.level, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom B-commandcommand O O O O O O O O O B-sysnumbersysnumber O
+smart.home.set.level, O O O O O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-commandcommand O O O O O O O O O B-sysnumbersysnumber O
+smart.home.set.level, B-commandcommand B-devicedevice O B-roomroom O
+smart.home.set.level, O O O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom B-commandcommand O O O O O O O O O B-sysnumbersysnumber O
+smart.home.set.level, O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O
+smart.home.device.onoff, B-commandcommand O O O O B-devicedevice I-devicedevice I-devicedevice
+smart.home.set.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesysnumber
+smart.home.set.level, B-commandcommand I-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice O O B-commandcommand O
+smart.home.set.level, B-commandcommand I-commandcommand B-devicedevice I-devicedevice O B-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-final-valuesysnumber O
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesysnumber
+smart.home.set.level, B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesysnumber
+smart.home.set.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.increase.level, O B-devicedevice I-devicedevice I-devicedevice O B-roomroom O
+smart.home.increase.percentage, O O B-devicedevice I-devicedevice O B-roomroom O
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom B-floornumberfloornumber O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O B-final-valuesysnumber O
+smart.home.set.level, O B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O
+smart.home.set.level, O B-commandcommand I-commandcommand O O B-devicedevice O O
+smart.home.set.level, O O B-commandcommand O O B-commandcommand B-devicedevice I-devicedevice O O O O O B-roomroom I-roomroom I-roomroom
+smart.home.set.level, O O O O O O O O B-commandcommand B-devicedevice I-devicedevice O O B-sysnumbersysnumber O O O O O
+smart.home.set.level, B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O B-final-valuesysnumber
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice B-roomroom I-roomroom O B-final-valuesysnumber
+smart.home.set.level, B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom I-roomroom B-commandcommand O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O O O
+smart.home.set.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.set.level, B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-commandcommand I-commandcommand O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand O O B-devicedevice I-devicedevice O O B-final-valuesysnumber O
+smart.home.set.level, B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-commandcommand O B-final-valuesysnumber
+smart.home.set.level, O O O O O O O O B-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-sysnumbersysnumber O O O O O
+smart.home.device.onoff, B-commandcommand O O O O B-devicedevice I-devicedevice
+smart.home.set.level, B-commandcommand I-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O B-commandcommand O
+smart.home.set.level, B-commandcommand B-devicedevice I-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom I-roomroom O O
+smart.home.set.level, O O B-commandcommand O O B-commandcommand I-commandcommand B-devicedevice I-devicedevice I-devicedevice I-devicedevice O O O O O B-roomroom I-roomroom I-roomroom B-floornumberfloornumber
+smart.home.set.level, B-commandcommand B-devicedevice O B-roomroom O
+smart.home.set.level, B-commandcommand I-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom O O B-sysnumbersysnumber
+smart.home.set.level, B-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber O B-roomroom I-roomroom I-roomroom O O O O O
+smart.home.set.level, B-commandcommand I-commandcommand O O O B-devicedevice I-devicedevice O O B-commandcommand O
+smart.home.set.level, B-devicedevice I-devicedevice B-roomroom I-roomroom I-roomroom O B-final-valuesysnumber
+smart.home.set.level, B-commandcommand I-commandcommand O O O B-devicedevice I-devicedevice I-devicedevice B-sysnumbersysnumber O B-roomroom I-roomroom I-roomroom I-roomroom O O O O O
+smart.home.set.level, O O O O O O B-devicedevice I-devicedevice I-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom B-commandcommand I-commandcommand O O O O O O O O O B-sysnumbersysnumber O
+smart.home.set.level, O B-commandcommand O O B-devicedevice I-devicedevice I-devicedevice O O
+smart.home.set.level, O O O O O O B-devicedevice I-devicedevice O B-roomroom I-roomroom I-roomroom I-roomroom B-commandcommand O O O O O O O O O B-sysnumbersysnumber O

@@ -142,9 +142,12 @@ class Trainer(object):
                         writer.add_scalar("Mean Intent Slot", results["mean_intent_slot"], _)
                         writer.add_scalar("Sentence Accuracy/validation", results["semantic_frame_acc"], _)
                         early_stopping(results[self.args.tuning_metric], self.model, self.args)
+                        if early_stopping.counter == 0:
+                            self.write_evaluation_result("best_eval_test_results.txt", results)
                         if early_stopping.early_stop:
                             print("Early stopping")
                             break
+                        
 
                     # if self.args.save_steps > 0 and global_step % self.args.save_steps == 0:
                     #     self.save_model()

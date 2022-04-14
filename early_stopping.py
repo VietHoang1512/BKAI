@@ -44,10 +44,10 @@ class EarlyStopping:
         """Saves model when validation loss decreases or accuracy/f1 increases."""
         if self.verbose:
             if args.tuning_metric == "loss":
-                print(f"Validation loss decreased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model ...")
+                print(f"Validation loss decreased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model to {args.model_dir}")
             else:
                 print(
-                    f"{args.tuning_metric} increased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model ..."
+                    f"{args.tuning_metric} increased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model to {args.model_dir}"
                 )
         model.save_pretrained(args.model_dir)
         torch.save(args, os.path.join(args.model_dir, "training_args.bin"))

@@ -1,5 +1,6 @@
-data/cache*
+*cache*
 outputs/
+predictions/
 *ipynb
 
 # Byte-compiled / optimized / DLL files

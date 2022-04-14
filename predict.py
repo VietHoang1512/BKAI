@@ -200,14 +200,20 @@ def predict(pred_config):
 
     # Write to output file
     with open(pred_config.output_file, "w", encoding="utf-8") as f:
-        for words, slot_preds, intent_pred in zip(lines, slot_preds_list, intent_preds):
-            line = ""
-            for word, pred in zip(words, slot_preds):
-                if pred == "O":
-                    line = line + word + " "
-                else:
-                    line = line + "[{}:{}] ".format(word, pred)
-            f.write("<{}> -> {}\n".format(intent_label_lst[intent_pred], line.strip()))
+        with open(pred_config.result_file, "w", encoding="utf-8") as h:
+            for words, slot_preds, intent_pred in zip(lines, slot_preds_list, intent_preds):
+                
+                result = ""
+                prediction = ""
+                sequence = ""
+                for word, pred in zip(words, slot_preds):
+                    result = result + "{} ".format(pred)
+                    prediction = prediction + "[{}:{}] ".format(word, pred)
+                    sequence = sequence + "{} ".format(word)
+                result = result.strip()
+                prediction = prediction.strip()
+                h.write("{}, {}\n".format(intent_label_lst[intent_pred], result))
+                f.write("{}\t{}\t{}\n".format(sequence, intent_label_lst[intent_pred], prediction))
 
     logger.info("Prediction Done!")
 
@@ -217,7 +223,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     parser.add_argument("--input_file", default="sample_pred_in.txt", type=str, help="Input file for prediction")
-    parser.add_argument("--output_file", default="sample_pred_out.txt", type=str, help="Output file for prediction")
+    parser.add_argument("--output_file", default="predictions.txt", type=str, help="Output file for prediction")
+    parser.add_argument("--result_file", default="results.csv", type=str, help="Output file for result")
     parser.add_argument("--model_dir", default="./atis_model", type=str, help="Path to save, load model")
 
     parser.add_argument("--batch_size", default=32, type=int, help="Batch size for prediction")

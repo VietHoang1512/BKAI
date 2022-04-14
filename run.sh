@@ -1,17 +1,17 @@
 #As we initialize JointIDSF from JointBERT, user need to train a base model JointBERT first
-./run_jointBERT-CRF_PhoBERTencoder.sh
+
 #Train JointIDSF
 export lr=4e-5
 export c=0.15
 export s=100
 echo "${lr}"
-export MODEL_DIR=JointIDSF_PhoBERTencoder
+export MODEL_DIR=outputs
 export MODEL_DIR=$MODEL_DIR"/"$lr"/"$c"/"$s
 echo "${MODEL_DIR}"
-python3 main.py --token_level word-level \
+python3 main.py --token_level syllable-level \
                   --model_type phobert \
                   --model_dir $MODEL_DIR \
-                  --data_dir PhoATIS \
+                  --data_dir data \
                   --seed $s \
                   --do_train \
                   --do_eval \
@@ -26,5 +26,5 @@ python3 main.py --token_level word-level \
                   --embedding_type soft \
                   --intent_loss_coef $c \
                   --pretrained \
-                  --pretrained_path JointBERT-CRF_PhoBERTencoder/3e-5/0.6/100 \
+                  --pretrained_path vinai/phobert-base \
                   --learning_rate $lr

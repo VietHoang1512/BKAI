@@ -1,7 +1,7 @@
 import os
 
 if __name__ == "__main__":
-    datadir = "train"
+    datadir = "dev"
     
     with open(os.path.join(datadir, "seq.in"), "r") as f:
         sequences = []

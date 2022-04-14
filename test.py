@@ -9,8 +9,7 @@ logging.getLogger("urllib3").propagate = False
 
 class VnCoreTokenizer:
     def __init__(self, path="./VnCoreNLP/VnCoreNLP-1.1.1.jar"):
-        print(path)
-        self.rdrsegmenter = VnCoreNLP(path, annotators="wseg", max_heap_size="-Xmx500m")
+        self.rdrsegmenter = VnCoreNLP(path_to_jar=path, annotators="wseg", max_heap_size="-Xmx500m")
 
     def tokenize(self, text: str, return_sentences=False) -> str:
         sentences = self.rdrsegmenter.tokenize(text)

@@ -4,43 +4,46 @@ import random
 
 import numpy as np
 import torch
-from model import JointPhoBERT, JointXLMR
+from model import JointRoberta, JointXLMR, JointBert, JointElectra
 from seqeval.metrics import f1_score, precision_score, recall_score
 from transformers import (
     AutoTokenizer,
+    BertTokenizer,
+    ElectraTokenizer,
+    BertConfig,
+    ElectraConfig,
     RobertaConfig,
     XLMRobertaConfig,
     XLMRobertaTokenizer,
 )
 
+from model.modeling_jointroberta import JointRoberta
+
 
 MODEL_CLASSES = {
     "xlmr": (XLMRobertaConfig, JointXLMR, XLMRobertaTokenizer),
-    "phobert": (RobertaConfig, JointPhoBERT, AutoTokenizer),
-}
-
-MODEL_PATH_MAP = {
-    "xlmr": "xlm-roberta-base",
-    "phobert": "vinai/phobert-base",
+    "roberta": (RobertaConfig, JointRoberta, AutoTokenizer),
+    "bert": (BertConfig, JointBert, BertTokenizer),
+    "electra": (ElectraConfig, JointElectra, ElectraTokenizer),
 }
 
 
 def get_intent_labels(args):
     return [
         label.strip()
-        for label in open(os.path.join(args.data_dir, args.token_level, args.intent_label_file), "r", encoding="utf-8")
+        for label in open(os.path.join(args.data_dir, args.intent_label_file), "r", encoding="utf-8")
     ]
 
 
 def get_slot_labels(args):
     return [
         label.strip()
-        for label in open(os.path.join(args.data_dir, args.token_level, args.slot_label_file), "r", encoding="utf-8")
+        for label in open(os.path.join(args.data_dir, args.slot_label_file), "r", encoding="utf-8")
     ]
 
 
 def load_tokenizer(args):
-    return MODEL_CLASSES[args.model_type][2].from_pretrained(args.model_name_or_path)
+    return MODEL_CLASSES[args.model_type][2].from_pretrained(args.pretrained_path)
 
 
 def init_logger():

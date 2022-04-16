@@ -114,7 +114,7 @@ class JointProcessor(object):
         Args:
             mode: train, dev, test
         """
-        data_path = os.path.join(self.args.data_dir, self.args.token_level, mode)
+        data_path = os.path.join(self.args.data_dir, mode)
         logger.info("LOOKING AT {}".format(data_path))
         return self._create_examples(
             texts=self._read_file(os.path.join(data_path, self.input_text_file)),
@@ -124,7 +124,7 @@ class JointProcessor(object):
         )
 
 
-processors = {"syllable-level": JointProcessor, "word-level": JointProcessor}
+# processors = {"syllable-level": JointProcessor, "word-level": JointProcessor}
 
 
 def convert_examples_to_features(
@@ -225,13 +225,13 @@ def convert_examples_to_features(
 
 
 def load_and_cache_examples(args, tokenizer, mode):
-    processor = processors[args.token_level](args)
+    processor = JointProcessor(args)
 
     # Load data features from cache or dataset file
     cached_features_file = os.path.join(
         args.data_dir,
-        "cached_{}_{}_{}_{}".format(
-            mode, args.token_level, list(filter(None, args.model_name_or_path.split("/"))).pop(), args.max_seq_len
+        "cached_{}_{}_{}".format(
+            mode,  list(filter(None, args.pretrained_path.split("/"))).pop(), args.max_seq_len
         ),
     )
 

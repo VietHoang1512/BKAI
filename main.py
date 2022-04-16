@@ -2,7 +2,7 @@ import argparse
 
 from data_loader import load_and_cache_examples
 from trainer import Trainer
-from utils import MODEL_CLASSES, MODEL_PATH_MAP, init_logger, load_tokenizer, set_seed
+from utils import MODEL_CLASSES,  init_logger, load_tokenizer, set_seed
 
 
 def main(args):
@@ -49,6 +49,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--max_seq_len", default=50, type=int, help="The maximum total input sequence length after tokenization."
     )
+    parser.add_argument("--n_hiddens", type=int, default=1, help="Concatenate n_hiddens final layer of [CLS] token's representation.")
     parser.add_argument("--learning_rate", default=5e-5, type=float, help="The initial learning rate for Adam.")
     parser.add_argument(
         "--num_train_epochs", default=10.0, type=float, help="Total number of training epochs to perform."
@@ -88,12 +89,7 @@ if __name__ == "__main__":
     )
 
     parser.add_argument("--intent_loss_coef", type=float, default=0.5, help="Coefficient for the intent loss.")
-    parser.add_argument(
-        "--token_level",
-        type=str,
-        default="word-level",
-        help="Tokens are at syllable level or word level (Vietnamese) [word-level, syllable-level]",
-    )
+
     parser.add_argument(
         "--early_stopping",
         type=int,
@@ -135,5 +131,4 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    args.model_name_or_path = MODEL_PATH_MAP[args.model_type]
     main(args)

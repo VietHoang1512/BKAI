@@ -6,14 +6,15 @@ export s=100
 echo "${lr}"
 
 max_seq_len=50
-
-for c in  .6 .45 .3 .15
+model_type=electra
+pretrained_path=NlpHUST/electra-base-vn
+for c in  .5
 do
-    export MODEL_DIR=outputs/phobert
+    export MODEL_DIR=outputs/$pretrained_path
     export MODEL_DIR=$MODEL_DIR"/"$lr"/"$c"/"$s
     echo "${MODEL_DIR}"
-    python3 main.py --token_level syllable-level \
-                    --model_type phobert \
+    python3 main.py --model_type $model_type \
+                    --train_batch_size 32 \
                     --model_dir $MODEL_DIR \
                     --data_dir data \
                     --seed $s \
@@ -26,11 +27,13 @@ do
                     --tuning_metric semantic_frame_acc \
                     --use_intent_context_attention \
                     --attention_embedding_size 200 \
+                    --dropout_rate .1 \
+                    --n_hiddens 3 \
                     --use_crf \
                     --gpu_id 0 \
                     --embedding_type soft \
                     --intent_loss_coef $c \
                     --pretrained \
-                    --pretrained_path vinai/phobert-base \
+                    --pretrained_path $pretrained_path \
                     --learning_rate $lr
 done

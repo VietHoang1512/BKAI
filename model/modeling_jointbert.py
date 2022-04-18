@@ -12,7 +12,7 @@ class JointBert(BertPreTrainedModel):
         self.args = args
         self.num_intent_labels = len(intent_label_lst)
         self.num_slot_labels = len(slot_label_lst)
-        self.roberta = BertModel(config)  # Load pretrained Roberta
+        self.bert_model = BertModel(config)  # Load pretrained Roberta
         self.model_type = type(self.bert_model).__name__.replace("Model", "").lower()
         self.n_hiddens = args.n_hiddens
         self.intent_classifier = IntentClassifier(

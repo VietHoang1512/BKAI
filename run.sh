@@ -30,7 +30,6 @@ do
                     --dropout_rate .1 \
                     --n_hiddens 0 \
                     --use_crf \
-                    --gpu_id 0 \
                     --embedding_type soft \
                     --intent_loss_coef $c \
                     --pretrained \

@@ -96,7 +96,6 @@ if __name__ == "__main__":
         default=50,
         help="Number of unincreased validation step to wait for early stopping",
     )
-    parser.add_argument("--gpu_id", type=int, default=0, help="Select gpu id")
     # CRF option
     parser.add_argument("--use_crf", action="store_true", help="Whether to use CRF")
     # init pretrained

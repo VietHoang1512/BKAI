@@ -13,7 +13,7 @@ class JointBert(BertPreTrainedModel):
         self.num_intent_labels = len(intent_label_lst)
         self.num_slot_labels = len(slot_label_lst)
         self.roberta = BertModel(config)  # Load pretrained Roberta
-
+        self.model_type = type(self.bert_model).__name__.replace("Model", "").lower()
         self.n_hiddens = args.n_hiddens
         self.intent_classifier = IntentClassifier(
             config.hidden_size*max(1, self.n_hiddens), self.num_intent_labels, args.dropout_rate)
@@ -33,15 +33,38 @@ class JointBert(BertPreTrainedModel):
             self.crf = CRF(num_tags=self.num_slot_labels, batch_first=True)
 
     def forward(self, input_ids, attention_mask, token_type_ids, intent_label_ids, slot_labels_ids):
-        outputs = self.roberta(
-            input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids, output_hidden_states=True
-        )  # sequence_output, pooled_output, (hidden_states), (attentions)
-        sequence_output = outputs[0]
-        if self.n_hiddens <= 1:
-            pooled_output = outputs[1]  # [CLS]
+        
+        if self.model_type in ["t5", "distilbert", "electra", "bart", "xlm", "xlnet", "camembert", "longformer"]:
+            outputs = self.bert_model(
+                input_ids, attention_mask=attention_mask, 
+                output_hidden_states=True,
+                return_dict=True,
+            ) 
         else:
-            pooled_output = torch.cat(
-                [outputs[2][-i][:, 0, :] for i in range(self.n_hiddens)], axis=-1)
+            outputs = self.bert_model(
+                input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids, 
+                output_hidden_states=True,
+                return_dict=True,
+            ) 
+        
+        # sequence_output, pooled_output, (hidden_states), (attentions)
+        
+        sequence_output = outputs["last_hidden_state"]
+        
+        if self.n_hiddens >= 1:
+            hidden_states_key = "hidden_states"
+            if self.model_type == "bart":
+                hidden_states_key = "decoder_hidden_states"
+            pooled_output = torch.cat([outputs[hidden_states_key][-i][:, 0, :] for i in range(self.n_hiddens)], axis=-1)
+        elif self.n_hiddens == 0:
+            pooled_output = outputs["pooler_output"]
+        else:
+            token_embeddings = outputs["last_hidden_state"]
+            input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
+            pooled_output = torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(
+                input_mask_expanded.sum(1), min=1e-9
+            )
+
         intent_logits = self.intent_classifier(pooled_output)
         if not self.args.use_attention_mask:
             tmp_attention_mask = None

@@ -8,7 +8,7 @@ echo "${lr}"
 max_seq_len=50
 model_type=auto
 pretrained_path=vinai/phobert-base
-for c in  .75 .6 .45
+for c in  .9 .75 .6 .45 .3 .15
 do
     export MODEL_DIR=outputs/$pretrained_path
     export MODEL_DIR=$MODEL_DIR"/"$lr"/"$c"/"$s

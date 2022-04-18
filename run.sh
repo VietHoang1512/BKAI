@@ -6,9 +6,9 @@ export s=100
 echo "${lr}"
 
 max_seq_len=50
-model_type=electra
-pretrained_path=NlpHUST/electra-base-vn
-for c in  .5
+model_type=auto
+pretrained_path=vinai/phobert-base
+for c in  .75 .6 .45
 do
     export MODEL_DIR=outputs/$pretrained_path
     export MODEL_DIR=$MODEL_DIR"/"$lr"/"$c"/"$s
@@ -28,7 +28,7 @@ do
                     --use_intent_context_attention \
                     --attention_embedding_size 200 \
                     --dropout_rate .1 \
-                    --n_hiddens 3 \
+                    --n_hiddens 0 \
                     --use_crf \
                     --gpu_id 0 \
                     --embedding_type soft \

@@ -4,27 +4,24 @@ import random
 
 import numpy as np
 import torch
-from model import JointRoberta, JointXLMR, JointBert, JointElectra
+from model import JointXLMR, JointBert, JointAuto
 from seqeval.metrics import f1_score, precision_score, recall_score
 from transformers import (
     AutoTokenizer,
     BertTokenizer,
-    ElectraTokenizer,
     BertConfig,
-    ElectraConfig,
-    RobertaConfig,
+    AutoConfig,
     XLMRobertaConfig,
     XLMRobertaTokenizer,
 )
 
-from model.modeling_jointroberta import JointRoberta
 
 
 MODEL_CLASSES = {
     "xlmr": (XLMRobertaConfig, JointXLMR, XLMRobertaTokenizer),
-    "roberta": (RobertaConfig, JointRoberta, AutoTokenizer),
+    "auto": (AutoConfig, JointAuto, AutoTokenizer),
     "bert": (BertConfig, JointBert, BertTokenizer),
-    "electra": (ElectraConfig, JointElectra, ElectraTokenizer),
+
 }
 
 

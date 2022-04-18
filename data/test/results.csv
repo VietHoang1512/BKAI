@@ -86,9 +86,7 @@ smart.home.set.percentage, O O O O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O
@@ -138,10 +136,7 @@ smart.home.set.percentage, O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O
-smart.home.set.percentage, O O O O O
 smart.home.set.percentage, O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O
@@ -153,14 +148,8 @@ smart.home.set.percentage, O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
-smart.home.set.percentage, O O O O O O
-smart.home.set.percentage, O O O O O O O
-smart.home.set.percentage, O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O
-smart.home.set.percentage, O O O O O O
 smart.home.set.percentage, O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O
@@ -169,13 +158,9 @@ smart.home.set.percentage, O O O O O O O O O O O O O O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O O
-smart.home.set.percentage, O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O
@@ -191,8 +176,6 @@ smart.home.set.percentage, O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O
 smart.home.set.percentage, O O O O O
-smart.home.set.percentage, O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O
 smart.home.set.percentage, O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O
@@ -212,14 +195,12 @@ smart.home.set.percentage, O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O
@@ -230,7 +211,6 @@ smart.home.set.percentage, O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O
@@ -331,19 +311,13 @@ smart.home.set.percentage, O O O O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O O
-smart.home.set.percentage, O O
-smart.home.set.percentage, O O O O O O O
-smart.home.set.percentage, O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O
-smart.home.set.percentage, O O O O
-smart.home.set.percentage, O O O O O O O
 smart.home.set.percentage, O O O O O O O
 smart.home.set.percentage, O O O O O O O
 smart.home.set.percentage, O O O O O O O O O
 smart.home.set.percentage, O O O O O O O
 smart.home.set.percentage, O O O O O O O O
-smart.home.set.percentage, O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O
 smart.home.set.percentage, O O O O O O O O
@@ -355,25 +329,15 @@ smart.home.set.percentage, O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O O
 smart.home.set.percentage, O O O O O O O
 smart.home.set.percentage, O O O O O O O O O
-smart.home.set.percentage, O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O O
 smart.home.set.percentage, O O O O O O
-smart.home.set.percentage, O O O O O O O O O
-smart.home.set.percentage, O O O O O O O
 smart.home.set.percentage, O O O O O O O O
 smart.home.set.percentage, O O O O O O
 smart.home.set.percentage, O O O O O O O
 smart.home.set.percentage, O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O
-smart.home.set.percentage, O O
-smart.home.set.percentage, O O O O O
-smart.home.set.percentage, O O O O
 smart.home.set.percentage, O O O O O O O O O
-smart.home.set.percentage, O O O O O O O O
 smart.home.set.percentage, O O O O O O O O O O O O O O O O O O
-smart.home.set.percentage, O O O O O O
-smart.home.set.percentage, O O
 smart.home.set.percentage, O O O O O O
 smart.home.set.percentage, O O O O
 smart.home.set.percentage, O O O O O

@@ -6,9 +6,9 @@ model_type=auto
 pretrained_path=vinai/phobert-base
 testdir=data/test
 
-for fold in {1..6}
+for c in  .45 .3 .15
 do
-    for c in  .6 .75 .9 
+    for fold in {1..6}
     do
         export MODEL_DIR=outputs/$pretrained_path/$lr/$c/$s/$fold
         echo "${MODEL_DIR}"
@@ -38,5 +38,6 @@ do
                                     --output_file $MODEL_DIR/predictions.txt \
                                     --result_file $MODEL_DIR/results.csv \
                                     --model_dir $MODEL_DIR
+        rm -rf $MODEL_DIR/*.bin
     done
 done

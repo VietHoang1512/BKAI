@@ -1,13 +1,18 @@
 import argparse
-
+import os
 from data_loader import load_and_cache_examples
 from trainer import Trainer
 from utils import MODEL_CLASSES,  init_logger, load_tokenizer, set_seed
-
+import yaml 
 
 def main(args):
     init_logger()
     set_seed(args)
+
+    os.makedirs(args.model_dir, exist_ok=True)
+    with open(os.path.join(args.model_dir, "config.yaml"), "w") as outfile:
+        yaml.dump(vars(args), outfile, default_flow_style=False)
+
     tokenizer = load_tokenizer(args)
 
     train_dataset = load_and_cache_examples(args, tokenizer, mode="train")

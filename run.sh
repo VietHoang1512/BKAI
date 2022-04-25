@@ -6,7 +6,7 @@ model_type=auto
 pretrained_path=vinai/phobert-base
 testdir=data/test
 
-for c in  .45 .3 .15
+for c in  .45 .3 .15 .6 .75 .9
 do
     for fold in {1..6}
     do

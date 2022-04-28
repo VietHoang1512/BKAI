@@ -142,7 +142,7 @@ class Trainer(object):
                         writer.add_scalar("Sentence Accuracy/validation", results["semantic_frame_acc"], _)
                         early_stopping(results[self.args.tuning_metric], self.model, self.args)
                         if early_stopping.counter == 0:
-                            self.write_evaluation_result("best_eval_test_results.txt", results)
+                            self.write_evaluation_result("best_eval_dev_results.txt", results)
                         if early_stopping.early_stop:
                             print("Early stopping")
                             break
@@ -290,12 +290,12 @@ class Trainer(object):
             raise Exception("Model doesn't exists! Train first!")
 
         try:
-            self.model = self.model_class.from_pretrained(
-                self.args.model_dir,
+            self.model = self.model_class(
                 args=self.args,
                 intent_label_lst=self.intent_label_lst,
                 slot_label_lst=self.slot_label_lst,
             )
+            self.model.load_state_dict(torch.load(os.path.join(self.args.model_dir, "model.pt")))
             self.model.to(self.device)
             logger.info("***** Model Loaded *****")
         except Exception:

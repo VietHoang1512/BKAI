@@ -1,25 +1,32 @@
 import torch
 import torch.nn as nn
 from torchcrf import CRF
-from transformers.models.bert.modeling_bert import BertPreTrainedModel, BertModel
-
+from transformers import BertModel, BertConfig
 from .module import IntentClassifier, SlotClassifier
 
 
-class JointBert(BertPreTrainedModel):
-    def __init__(self, config, args, intent_label_lst, slot_label_lst):
-        super(JointBert, self).__init__(config)
+class JointBert(nn.Module):
+    def __init__(self, args, intent_label_lst, slot_label_lst):
+        super().__init__()
         self.args = args
         self.num_intent_labels = len(intent_label_lst)
         self.num_slot_labels = len(slot_label_lst)
-        self.bert_model = BertModel(config)  # Load pretrained Roberta
-        self.model_type = type(self.bert_model).__name__.replace("Model", "").lower()
+        self.config = BertConfig.from_pretrained(
+            args.pretrained_path,
+            from_tf=False,
+            output_hidden_states=True,
+            return_dict=True,
+        )
+        self.bert_model = BertModel.from_pretrained(
+            args.pretrained_path, config=self.config)
+        self.model_type = type(self.bert_model).__name__.replace(
+            "Model", "").lower()
         self.n_hiddens = args.n_hiddens
         self.intent_classifier = IntentClassifier(
-            config.hidden_size*max(1, self.n_hiddens), self.num_intent_labels, args.dropout_rate)
+            self.config.hidden_size*max(1, self.n_hiddens), self.num_intent_labels, args.dropout_rate)
 
         self.slot_classifier = SlotClassifier(
-            config.hidden_size,
+            self.config.hidden_size,
             self.num_intent_labels,
             self.num_slot_labels,
             self.args.use_intent_context_concat,
@@ -33,34 +40,32 @@ class JointBert(BertPreTrainedModel):
             self.crf = CRF(num_tags=self.num_slot_labels, batch_first=True)
 
     def forward(self, input_ids, attention_mask, token_type_ids, intent_label_ids, slot_labels_ids):
-        
-        if self.model_type in ["t5", "distilbert", "electra", "bart", "xlm", "xlnet", "camembert", "longformer"]:
+
+        if self.model_type in ["t5", "distilbert", "electra", "mbart", "bart", "xlm", "xlnet", "camembert", "longformer"]:
             outputs = self.bert_model(
-                input_ids, attention_mask=attention_mask, 
-                output_hidden_states=True,
-                return_dict=True,
-            ) 
+                input_ids, attention_mask=attention_mask,
+            )
         else:
             outputs = self.bert_model(
-                input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids, 
-                output_hidden_states=True,
-                return_dict=True,
-            ) 
-        
+                input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
+            )
+
         # sequence_output, pooled_output, (hidden_states), (attentions)
-        
+
         sequence_output = outputs["last_hidden_state"]
-        
+
         if self.n_hiddens >= 1:
             hidden_states_key = "hidden_states"
-            if self.model_type == "bart":
+            if "bart" in self.model_type:
                 hidden_states_key = "decoder_hidden_states"
-            pooled_output = torch.cat([outputs[hidden_states_key][-i][:, 0, :] for i in range(self.n_hiddens)], axis=-1)
+            pooled_output = torch.cat(
+                [outputs[hidden_states_key][-i][:, 0, :] for i in range(self.n_hiddens)], axis=-1)
         elif self.n_hiddens == 0:
             pooled_output = outputs["pooler_output"]
         else:
             token_embeddings = outputs["last_hidden_state"]
-            input_mask_expanded = attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
+            input_mask_expanded = attention_mask.unsqueeze(
+                -1).expand(token_embeddings.size()).float()
             pooled_output = torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(
                 input_mask_expanded.sum(1), min=1e-9
             )

@@ -41,7 +41,7 @@ class JointAuto(nn.Module):
 
     def forward(self, input_ids, attention_mask, token_type_ids, intent_label_ids, slot_labels_ids):
 
-        if self.model_type in ["t5", "distilbert", "electra", "bart", "xlm", "xlnet", "camembert", "longformer"]:
+        if self.model_type in ["t5", "distilbert", "electra", "mbart", "bart", "xlm", "xlnet", "camembert", "longformer"]:
             outputs = self.bert_model(
                 input_ids, attention_mask=attention_mask,
             )
@@ -56,7 +56,7 @@ class JointAuto(nn.Module):
 
         if self.n_hiddens >= 1:
             hidden_states_key = "hidden_states"
-            if self.model_type == "bart":
+            if "bart" in self.model_type:
                 hidden_states_key = "decoder_hidden_states"
             pooled_output = torch.cat(
                 [outputs[hidden_states_key][-i][:, 0, :] for i in range(self.n_hiddens)], axis=-1)

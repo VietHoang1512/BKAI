@@ -49,7 +49,7 @@ class EarlyStopping:
                 print(
                     f"{args.tuning_metric} increased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model to {args.model_dir}"
                 )
-        model.save_pretrained(args.model_dir)
+        torch.save(model.state_dict(), os.path.join(args.model_dir, "model.pt"))
         torch.save(args, os.path.join(args.model_dir, "training_args.bin"))
         self.val_loss_min = val_loss
 

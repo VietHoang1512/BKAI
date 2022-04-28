@@ -26,12 +26,12 @@ class Trainer(object):
         # Use cross entropy ignore index as padding label id so that only real label ids contribute to the loss later
         self.pad_token_label_id = args.ignore_index
         self.config_class, self.model_class, _ = MODEL_CLASSES[args.model_type]
+      
         # self.config = self.config_class.from_pretrained(model_path, finetuning_task=args.task)
 
         if args.pretrained:
             print("args.pretrained_path:", args.pretrained_path)
-            self.model = self.model_class.from_pretrained(
-                args.pretrained_path,
+            self.model = self.model_class(
                 args=args,
                 intent_label_lst=self.intent_label_lst,
                 slot_label_lst=self.slot_label_lst,

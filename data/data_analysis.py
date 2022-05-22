@@ -2,7 +2,7 @@ import os
 
 if __name__ == "__main__":
     datadir = "dev"
-    
+
     with open(os.path.join(datadir, "seq.in"), "r") as f:
         sequences = []
         for line in f:
@@ -18,8 +18,10 @@ if __name__ == "__main__":
     total = len(intents)
     with open(os.path.join(datadir, "data.txt"), "w") as f:
         for i in range(total):
-            assert len(slots[i])==len(sequences[i]), "len(slots[i])!=len(sequences[i])"
-            line = " ".join(sequences[i])+"\t"+intents[i]+"\t"
+            assert len(slots[i]) == len(
+                sequences[i]
+            ), "len(slots[i])!=len(sequences[i])"
+            line = " ".join(sequences[i]) + "\t" + intents[i] + "\t"
             for j in range(len(slots[i])):
-               line  = line + "[{}:{}] ".format(sequences[i][j], slots[i][j])
-            f.write(line.strip()+"\n")
+                line = line + "[{}:{}] ".format(sequences[i][j], slots[i][j])
+            f.write(line.strip() + "\n")

@@ -16,26 +16,28 @@ from transformers import (
 )
 
 
-
 MODEL_CLASSES = {
     "xlmr": (XLMRobertaConfig, JointXLMR, XLMRobertaTokenizer),
     "auto": (AutoConfig, JointAuto, AutoTokenizer),
     "bert": (BertConfig, JointBert, BertTokenizer),
-
 }
 
 
 def get_intent_labels(args):
     return [
         label.strip()
-        for label in open(os.path.join(args.data_dir, args.intent_label_file), "r", encoding="utf-8")
+        for label in open(
+            os.path.join(args.data_dir, args.intent_label_file), "r", encoding="utf-8"
+        )
     ]
 
 
 def get_slot_labels(args):
     return [
         label.strip()
-        for label in open(os.path.join(args.data_dir, args.slot_label_file), "r", encoding="utf-8")
+        for label in open(
+            os.path.join(args.data_dir, args.slot_label_file), "r", encoding="utf-8"
+        )
     ]
 
 
@@ -60,11 +62,15 @@ def set_seed(args):
 
 
 def compute_metrics(intent_preds, intent_labels, slot_preds, slot_labels):
-    assert len(intent_preds) == len(intent_labels) == len(slot_preds) == len(slot_labels)
+    assert (
+        len(intent_preds) == len(intent_labels) == len(slot_preds) == len(slot_labels)
+    )
     results = {}
     intent_result = get_intent_acc(intent_preds, intent_labels)
     slot_result = get_slot_metrics(slot_preds, slot_labels)
-    sementic_result = get_sentence_frame_acc(intent_preds, intent_labels, slot_preds, slot_labels)
+    sementic_result = get_sentence_frame_acc(
+        intent_preds, intent_labels, slot_preds, slot_labels
+    )
 
     mean_intent_slot = (intent_result["intent_acc"] + slot_result["slot_f1"]) / 2
 
@@ -91,7 +97,12 @@ def get_intent_acc(preds, labels):
 
 
 def read_prediction_text(args):
-    return [text.strip() for text in open(os.path.join(args.pred_dir, args.pred_input_file), "r", encoding="utf-8")]
+    return [
+        text.strip()
+        for text in open(
+            os.path.join(args.pred_dir, args.pred_input_file), "r", encoding="utf-8"
+        )
+    ]
 
 
 def get_sentence_frame_acc(intent_preds, intent_labels, slot_preds, slot_labels):

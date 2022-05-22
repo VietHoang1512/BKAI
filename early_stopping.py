@@ -44,7 +44,9 @@ class EarlyStopping:
         """Saves model when validation loss decreases or accuracy/f1 increases."""
         if self.verbose:
             if args.tuning_metric == "loss":
-                print(f"Validation loss decreased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model to {args.model_dir}")
+                print(
+                    f"Validation loss decreased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model to {args.model_dir}"
+                )
             else:
                 print(
                     f"{args.tuning_metric} increased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model to {args.model_dir}"

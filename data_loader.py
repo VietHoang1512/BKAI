@@ -44,7 +44,14 @@ class InputExample(object):
 class InputFeatures(object):
     """A single set of features of data."""
 
-    def __init__(self, input_ids, attention_mask, token_type_ids, intent_label_id, slot_labels_ids):
+    def __init__(
+        self,
+        input_ids,
+        attention_mask,
+        token_type_ids,
+        intent_label_id,
+        slot_labels_ids,
+    ):
         self.input_ids = input_ids
         self.attention_mask = attention_mask
         self.token_type_ids = token_type_ids
@@ -65,7 +72,7 @@ class InputFeatures(object):
 
 
 class JointProcessor(object):
-    """Processor for the JointBERT data set """
+    """Processor for the JointBERT data set"""
 
     def __init__(self, args):
         self.args = args
@@ -93,20 +100,29 @@ class JointProcessor(object):
             # 1. input_text
             words = text.split()  # Some are spaced twice
             # 2. intent
-            intent_label = self.intent_labels.index(intent) 
-            
+            intent_label = self.intent_labels.index(intent)
+
             # intent_label = (
             #     self.intent_labels.index(intent) if intent in self.intent_labels else self.intent_labels.index("UNK")
-            # )            
+            # )
             # 3. slot
             slot_labels = []
             for s in slot.split():
                 slot_labels.append(
-                    self.slot_labels.index(s) if s in self.slot_labels else self.slot_labels.index("UNK")
+                    self.slot_labels.index(s)
+                    if s in self.slot_labels
+                    else self.slot_labels.index("UNK")
                 )
 
             assert len(words) == len(slot_labels)
-            examples.append(InputExample(guid=guid, words=words, intent_label=intent_label, slot_labels=slot_labels))
+            examples.append(
+                InputExample(
+                    guid=guid,
+                    words=words,
+                    intent_label=intent_label,
+                    slot_labels=slot_labels,
+                )
+            )
         return examples
 
     def get_examples(self, mode):
@@ -157,7 +173,9 @@ def convert_examples_to_features(
                 word_tokens = [unk_token]  # For handling the bad-encoded word
             tokens.extend(word_tokens)
             # Use the real label id for the first token of the word, and padding ids for the remaining tokens
-            slot_labels_ids.extend([int(slot_label)] + [pad_token_label_id] * (len(word_tokens) - 1))
+            slot_labels_ids.extend(
+                [int(slot_label)] + [pad_token_label_id] * (len(word_tokens) - 1)
+            )
 
         # Account for [CLS] and [SEP]
         special_tokens_count = 2
@@ -184,18 +202,28 @@ def convert_examples_to_features(
         # Zero-pad up to the sequence length.
         padding_length = max_seq_len - len(input_ids)
         input_ids = input_ids + ([pad_token_id] * padding_length)
-        attention_mask = attention_mask + ([0 if mask_padding_with_zero else 1] * padding_length)
+        attention_mask = attention_mask + (
+            [0 if mask_padding_with_zero else 1] * padding_length
+        )
         token_type_ids = token_type_ids + ([pad_token_segment_id] * padding_length)
         slot_labels_ids = slot_labels_ids + ([pad_token_label_id] * padding_length)
 
-        assert len(input_ids) == max_seq_len, "Error with input length {} vs {}".format(len(input_ids), max_seq_len)
-        assert len(attention_mask) == max_seq_len, "Error with attention mask length {} vs {}".format(
+        assert len(input_ids) == max_seq_len, "Error with input length {} vs {}".format(
+            len(input_ids), max_seq_len
+        )
+        assert (
+            len(attention_mask) == max_seq_len
+        ), "Error with attention mask length {} vs {}".format(
             len(attention_mask), max_seq_len
         )
-        assert len(token_type_ids) == max_seq_len, "Error with token type length {} vs {}".format(
+        assert (
+            len(token_type_ids) == max_seq_len
+        ), "Error with token type length {} vs {}".format(
             len(token_type_ids), max_seq_len
         )
-        assert len(slot_labels_ids) == max_seq_len, "Error with slot labels length {} vs {}".format(
+        assert (
+            len(slot_labels_ids) == max_seq_len
+        ), "Error with slot labels length {} vs {}".format(
             len(slot_labels_ids), max_seq_len
         )
 
@@ -206,9 +234,15 @@ def convert_examples_to_features(
             logger.info("guid: %s" % example.guid)
             logger.info("tokens: %s" % " ".join([str(x) for x in tokens]))
             logger.info("input_ids: %s" % " ".join([str(x) for x in input_ids]))
-            logger.info("attention_mask: %s" % " ".join([str(x) for x in attention_mask]))
-            logger.info("token_type_ids: %s" % " ".join([str(x) for x in token_type_ids]))
-            logger.info("intent_label: %s (id = %d)" % (example.intent_label, intent_label_id))
+            logger.info(
+                "attention_mask: %s" % " ".join([str(x) for x in attention_mask])
+            )
+            logger.info(
+                "token_type_ids: %s" % " ".join([str(x) for x in token_type_ids])
+            )
+            logger.info(
+                "intent_label: %s (id = %d)" % (example.intent_label, intent_label_id)
+            )
             logger.info("slot_labels: %s" % " ".join([str(x) for x in slot_labels_ids]))
 
         features.append(
@@ -231,7 +265,9 @@ def load_and_cache_examples(args, tokenizer, mode):
     cached_features_file = os.path.join(
         args.data_dir,
         "cached_{}_{}_{}".format(
-            mode,  list(filter(None, args.pretrained_path.split("/"))).pop(), args.max_seq_len
+            mode,
+            list(filter(None, args.pretrained_path.split("/"))).pop(),
+            args.max_seq_len,
         ),
     )
 
@@ -260,12 +296,24 @@ def load_and_cache_examples(args, tokenizer, mode):
 
     # Convert to Tensors and build dataset
     all_input_ids = torch.tensor([f.input_ids for f in features], dtype=torch.long)
-    all_attention_mask = torch.tensor([f.attention_mask for f in features], dtype=torch.long)
-    all_token_type_ids = torch.tensor([f.token_type_ids for f in features], dtype=torch.long)
-    all_intent_label_ids = torch.tensor([f.intent_label_id for f in features], dtype=torch.long)
-    all_slot_labels_ids = torch.tensor([f.slot_labels_ids for f in features], dtype=torch.long)
+    all_attention_mask = torch.tensor(
+        [f.attention_mask for f in features], dtype=torch.long
+    )
+    all_token_type_ids = torch.tensor(
+        [f.token_type_ids for f in features], dtype=torch.long
+    )
+    all_intent_label_ids = torch.tensor(
+        [f.intent_label_id for f in features], dtype=torch.long
+    )
+    all_slot_labels_ids = torch.tensor(
+        [f.slot_labels_ids for f in features], dtype=torch.long
+    )
 
     dataset = TensorDataset(
-        all_input_ids, all_attention_mask, all_token_type_ids, all_intent_label_ids, all_slot_labels_ids
+        all_input_ids,
+        all_attention_mask,
+        all_token_type_ids,
+        all_intent_label_ids,
+        all_slot_labels_ids,
     )
     return dataset

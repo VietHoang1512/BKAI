@@ -26,7 +26,7 @@ class Trainer(object):
         # Use cross entropy ignore index as padding label id so that only real label ids contribute to the loss later
         self.pad_token_label_id = args.ignore_index
         self.config_class, self.model_class, _ = MODEL_CLASSES[args.model_type]
-      
+
         # self.config = self.config_class.from_pretrained(model_path, finetuning_task=args.task)
 
         if args.pretrained:
@@ -38,7 +38,9 @@ class Trainer(object):
             )
         else:
             raise NotImplementedError("Only support pretrained model")
-            self.config = self.config_class.from_pretrained(args.pretrained_path, finetuning_task=args.token_level)
+            self.config = self.config_class.from_pretrained(
+                args.pretrained_path, finetuning_task=args.token_level
+            )
             self.model = self.model_class.from_pretrained(
                 args.pretrained_path,
                 config=self.config,
@@ -48,20 +50,32 @@ class Trainer(object):
             )
         # GPU or CPU
 
-        self.device = "cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu"
+        self.device = (
+            "cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu"
+        )
         self.model.to(self.device)
 
     def train(self):
         train_sampler = RandomSampler(self.train_dataset)
-        train_dataloader = DataLoader(self.train_dataset, sampler=train_sampler, batch_size=self.args.train_batch_size)
+        train_dataloader = DataLoader(
+            self.train_dataset,
+            sampler=train_sampler,
+            batch_size=self.args.train_batch_size,
+        )
         writer = SummaryWriter(log_dir=self.args.model_dir)
         if self.args.max_steps > 0:
             t_total = self.args.max_steps
             self.args.num_train_epochs = (
-                self.args.max_steps // (len(train_dataloader) // self.args.gradient_accumulation_steps) + 1
+                self.args.max_steps
+                // (len(train_dataloader) // self.args.gradient_accumulation_steps)
+                + 1
             )
         else:
-            t_total = len(train_dataloader) // self.args.gradient_accumulation_steps * self.args.num_train_epochs
+            t_total = (
+                len(train_dataloader)
+                // self.args.gradient_accumulation_steps
+                * self.args.num_train_epochs
+            )
         print("check init")
         results = self.evaluate("dev")
         print(results)
@@ -69,17 +83,31 @@ class Trainer(object):
         no_decay = ["bias", "LayerNorm.weight"]
         optimizer_grouped_parameters = [
             {
-                "params": [p for n, p in self.model.named_parameters() if not any(nd in n for nd in no_decay)],
+                "params": [
+                    p
+                    for n, p in self.model.named_parameters()
+                    if not any(nd in n for nd in no_decay)
+                ],
                 "weight_decay": self.args.weight_decay,
             },
             {
-                "params": [p for n, p in self.model.named_parameters() if any(nd in n for nd in no_decay)],
+                "params": [
+                    p
+                    for n, p in self.model.named_parameters()
+                    if any(nd in n for nd in no_decay)
+                ],
                 "weight_decay": 0.0,
             },
         ]
-        optimizer = AdamW(optimizer_grouped_parameters, lr=self.args.learning_rate, eps=self.args.adam_epsilon)
+        optimizer = AdamW(
+            optimizer_grouped_parameters,
+            lr=self.args.learning_rate,
+            eps=self.args.adam_epsilon,
+        )
         scheduler = get_linear_schedule_with_warmup(
-            optimizer, num_warmup_steps=self.args.warmup_steps, num_training_steps=t_total
+            optimizer,
+            num_warmup_steps=self.args.warmup_steps,
+            num_training_steps=t_total,
         )
 
         # Train!
@@ -87,7 +115,9 @@ class Trainer(object):
         logger.info("  Num examples = %d", len(self.train_dataset))
         logger.info("  Num Epochs = %d", self.args.num_train_epochs)
         logger.info("  Total train batch size = %d", self.args.train_batch_size)
-        logger.info("  Gradient Accumulation steps = %d", self.args.gradient_accumulation_steps)
+        logger.info(
+            "  Gradient Accumulation steps = %d", self.args.gradient_accumulation_steps
+        )
         logger.info("  Total optimization steps = %d", t_total)
         logger.info("  Logging steps = %d", self.args.logging_steps)
         logger.info("  Save steps = %d", self.args.save_steps)
@@ -100,7 +130,9 @@ class Trainer(object):
         early_stopping = EarlyStopping(patience=self.args.early_stopping, verbose=True)
 
         for _ in train_iterator:
-            epoch_iterator = tqdm(train_dataloader, desc="Iteration", position=0, leave=True)
+            epoch_iterator = tqdm(
+                train_dataloader, desc="Iteration", position=0, leave=True
+            )
             print("\nEpoch", _)
 
             for step, batch in enumerate(epoch_iterator):
@@ -125,28 +157,44 @@ class Trainer(object):
 
                 tr_loss += loss.item()
                 if (step + 1) % self.args.gradient_accumulation_steps == 0:
-                    torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.args.max_grad_norm)
+                    torch.nn.utils.clip_grad_norm_(
+                        self.model.parameters(), self.args.max_grad_norm
+                    )
 
                     optimizer.step()
                     scheduler.step()  # Update learning rate schedule
                     self.model.zero_grad()
                     global_step += 1
 
-                    if self.args.logging_steps > 0 and global_step % self.args.logging_steps == 0:
+                    if (
+                        self.args.logging_steps > 0
+                        and global_step % self.args.logging_steps == 0
+                    ):
                         print("\nTuning metrics:", self.args.tuning_metric)
                         results = self.evaluate("dev")
                         writer.add_scalar("Loss/validation", results["loss"], _)
-                        writer.add_scalar("Intent Accuracy/validation", results["intent_acc"], _)
+                        writer.add_scalar(
+                            "Intent Accuracy/validation", results["intent_acc"], _
+                        )
                         writer.add_scalar("Slot F1/validation", results["slot_f1"], _)
-                        writer.add_scalar("Mean Intent Slot", results["mean_intent_slot"], _)
-                        writer.add_scalar("Sentence Accuracy/validation", results["semantic_frame_acc"], _)
-                        early_stopping(results[self.args.tuning_metric], self.model, self.args)
+                        writer.add_scalar(
+                            "Mean Intent Slot", results["mean_intent_slot"], _
+                        )
+                        writer.add_scalar(
+                            "Sentence Accuracy/validation",
+                            results["semantic_frame_acc"],
+                            _,
+                        )
+                        early_stopping(
+                            results[self.args.tuning_metric], self.model, self.args
+                        )
                         if early_stopping.counter == 0:
-                            self.write_evaluation_result("best_eval_dev_results.txt", results)
+                            self.write_evaluation_result(
+                                "best_eval_dev_results.txt", results
+                            )
                         if early_stopping.early_stop:
                             print("Early stopping")
                             break
-                        
 
                     # if self.args.save_steps > 0 and global_step % self.args.save_steps == 0:
                     #     self.save_model()
@@ -181,7 +229,9 @@ class Trainer(object):
             raise Exception("Only dev and test dataset available")
 
         eval_sampler = SequentialSampler(dataset)
-        eval_dataloader = DataLoader(dataset, sampler=eval_sampler, batch_size=self.args.eval_batch_size)
+        eval_dataloader = DataLoader(
+            dataset, sampler=eval_sampler, batch_size=self.args.eval_batch_size
+        )
 
         # Eval!
         logger.info("***** Running evaluation on %s dataset *****", mode)
@@ -218,9 +268,13 @@ class Trainer(object):
                 intent_preds = intent_logits.detach().cpu().numpy()
                 out_intent_label_ids = inputs["intent_label_ids"].detach().cpu().numpy()
             else:
-                intent_preds = np.append(intent_preds, intent_logits.detach().cpu().numpy(), axis=0)
+                intent_preds = np.append(
+                    intent_preds, intent_logits.detach().cpu().numpy(), axis=0
+                )
                 out_intent_label_ids = np.append(
-                    out_intent_label_ids, inputs["intent_label_ids"].detach().cpu().numpy(), axis=0
+                    out_intent_label_ids,
+                    inputs["intent_label_ids"].detach().cpu().numpy(),
+                    axis=0,
                 )
 
             # Slot prediction
@@ -234,12 +288,18 @@ class Trainer(object):
                 out_slot_labels_ids = inputs["slot_labels_ids"].detach().cpu().numpy()
             else:
                 if self.args.use_crf:
-                    slot_preds = np.append(slot_preds, np.array(self.model.crf.decode(slot_logits)), axis=0)
+                    slot_preds = np.append(
+                        slot_preds, np.array(self.model.crf.decode(slot_logits)), axis=0
+                    )
                 else:
-                    slot_preds = np.append(slot_preds, slot_logits.detach().cpu().numpy(), axis=0)
+                    slot_preds = np.append(
+                        slot_preds, slot_logits.detach().cpu().numpy(), axis=0
+                    )
 
                 out_slot_labels_ids = np.append(
-                    out_slot_labels_ids, inputs["slot_labels_ids"].detach().cpu().numpy(), axis=0
+                    out_slot_labels_ids,
+                    inputs["slot_labels_ids"].detach().cpu().numpy(),
+                    axis=0,
                 )
 
         eval_loss = eval_loss / nb_eval_steps
@@ -258,10 +318,14 @@ class Trainer(object):
         for i in range(out_slot_labels_ids.shape[0]):
             for j in range(out_slot_labels_ids.shape[1]):
                 if out_slot_labels_ids[i, j] != self.pad_token_label_id:
-                    out_slot_label_list[i].append(slot_label_map[out_slot_labels_ids[i][j]])
+                    out_slot_label_list[i].append(
+                        slot_label_map[out_slot_labels_ids[i][j]]
+                    )
                     slot_preds_list[i].append(slot_label_map[slot_preds[i][j]])
 
-        total_result = compute_metrics(intent_preds, out_intent_label_ids, slot_preds_list, out_slot_label_list)
+        total_result = compute_metrics(
+            intent_preds, out_intent_label_ids, slot_preds_list, out_slot_label_list
+        )
         results.update(total_result)
 
         logger.info("***** Eval results *****")
@@ -277,7 +341,9 @@ class Trainer(object):
         # Save model checkpoint (Overwrite)
         if not os.path.exists(self.args.model_dir):
             os.makedirs(self.args.model_dir)
-        model_to_save = self.model.module if hasattr(self.model, "module") else self.model
+        model_to_save = (
+            self.model.module if hasattr(self.model, "module") else self.model
+        )
         model_to_save.save_pretrained(self.args.model_dir)
 
         # Save training arguments together with the trained model
@@ -295,7 +361,9 @@ class Trainer(object):
                 intent_label_lst=self.intent_label_lst,
                 slot_label_lst=self.slot_label_lst,
             )
-            self.model.load_state_dict(torch.load(os.path.join(self.args.model_dir, "model.pt")))
+            self.model.load_state_dict(
+                torch.load(os.path.join(self.args.model_dir, "model.pt"))
+            )
             self.model.to(self.device)
             logger.info("***** Model Loaded *****")
         except Exception:

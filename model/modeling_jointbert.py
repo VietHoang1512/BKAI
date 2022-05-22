@@ -18,12 +18,15 @@ class JointBert(nn.Module):
             return_dict=True,
         )
         self.bert_model = BertModel.from_pretrained(
-            args.pretrained_path, config=self.config)
-        self.model_type = type(self.bert_model).__name__.replace(
-            "Model", "").lower()
+            args.pretrained_path, config=self.config
+        )
+        self.model_type = type(self.bert_model).__name__.replace("Model", "").lower()
         self.n_hiddens = args.n_hiddens
         self.intent_classifier = IntentClassifier(
-            self.config.hidden_size*max(1, self.n_hiddens), self.num_intent_labels, args.dropout_rate)
+            self.config.hidden_size * max(1, self.n_hiddens),
+            self.num_intent_labels,
+            args.dropout_rate,
+        )
 
         self.slot_classifier = SlotClassifier(
             self.config.hidden_size,
@@ -39,15 +42,35 @@ class JointBert(nn.Module):
         if args.use_crf:
             self.crf = CRF(num_tags=self.num_slot_labels, batch_first=True)
 
-    def forward(self, input_ids, attention_mask, token_type_ids, intent_label_ids, slot_labels_ids):
+    def forward(
+        self,
+        input_ids,
+        attention_mask,
+        token_type_ids,
+        intent_label_ids,
+        slot_labels_ids,
+    ):
 
-        if self.model_type in ["t5", "distilbert", "electra", "mbart", "bart", "xlm", "xlnet", "camembert", "longformer"]:
+        if self.model_type in [
+            "t5",
+            "distilbert",
+            "electra",
+            "mbart",
+            "bart",
+            "xlm",
+            "xlnet",
+            "camembert",
+            "longformer",
+        ]:
             outputs = self.bert_model(
-                input_ids, attention_mask=attention_mask,
+                input_ids,
+                attention_mask=attention_mask,
             )
         else:
             outputs = self.bert_model(
-                input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids,
+                input_ids,
+                attention_mask=attention_mask,
+                token_type_ids=token_type_ids,
             )
 
         # sequence_output, pooled_output, (hidden_states), (attentions)
@@ -59,16 +82,22 @@ class JointBert(nn.Module):
             if "bart" in self.model_type:
                 hidden_states_key = "decoder_hidden_states"
             pooled_output = torch.cat(
-                [outputs[hidden_states_key][-i][:, 0, :] for i in range(self.n_hiddens)], axis=-1)
+                [
+                    outputs[hidden_states_key][-i][:, 0, :]
+                    for i in range(self.n_hiddens)
+                ],
+                axis=-1,
+            )
         elif self.n_hiddens == 0:
             pooled_output = outputs["pooler_output"]
         else:
             token_embeddings = outputs["last_hidden_state"]
-            input_mask_expanded = attention_mask.unsqueeze(
-                -1).expand(token_embeddings.size()).float()
-            pooled_output = torch.sum(token_embeddings * input_mask_expanded, 1) / torch.clamp(
-                input_mask_expanded.sum(1), min=1e-9
+            input_mask_expanded = (
+                attention_mask.unsqueeze(-1).expand(token_embeddings.size()).float()
             )
+            pooled_output = torch.sum(
+                token_embeddings * input_mask_expanded, 1
+            ) / torch.clamp(input_mask_expanded.sum(1), min=1e-9)
 
         intent_logits = self.intent_classifier(pooled_output)
         if not self.args.use_attention_mask:
@@ -82,10 +111,12 @@ class JointBert(nn.Module):
                 max_idx = torch.argmax(sample)
                 hard_intent_logits[i][max_idx] = 1
             slot_logits = self.slot_classifier(
-                sequence_output, hard_intent_logits, tmp_attention_mask)
+                sequence_output, hard_intent_logits, tmp_attention_mask
+            )
         else:
             slot_logits = self.slot_classifier(
-                sequence_output, intent_logits, tmp_attention_mask)
+                sequence_output, intent_logits, tmp_attention_mask
+            )
 
         total_loss = 0
         # 1. Intent Softmax
@@ -93,12 +124,13 @@ class JointBert(nn.Module):
             if self.num_intent_labels == 1:
                 intent_loss_fct = nn.MSELoss()
                 intent_loss = intent_loss_fct(
-                    intent_logits.view(-1), intent_label_ids.view(-1))
+                    intent_logits.view(-1), intent_label_ids.view(-1)
+                )
             else:
                 intent_loss_fct = nn.CrossEntropyLoss()
                 intent_loss = intent_loss_fct(
-                    intent_logits.view(-1,
-                                       self.num_intent_labels), intent_label_ids.view(-1)
+                    intent_logits.view(-1, self.num_intent_labels),
+                    intent_label_ids.view(-1),
                 )
             total_loss += self.args.intent_loss_coef * intent_loss
 
@@ -106,21 +138,27 @@ class JointBert(nn.Module):
         if slot_labels_ids is not None:
             if self.args.use_crf:
                 slot_loss = self.crf(
-                    slot_logits, slot_labels_ids, mask=attention_mask.byte(), reduction="mean")
+                    slot_logits,
+                    slot_labels_ids,
+                    mask=attention_mask.byte(),
+                    reduction="mean",
+                )
                 slot_loss = -1 * slot_loss  # negative log-likelihood
             else:
-                slot_loss_fct = nn.CrossEntropyLoss(
-                    ignore_index=self.args.ignore_index)
+                slot_loss_fct = nn.CrossEntropyLoss(ignore_index=self.args.ignore_index)
                 # Only keep active parts of the loss
                 if attention_mask is not None:
                     active_loss = attention_mask.view(-1) == 1
-                    active_logits = slot_logits.view(-1,
-                                                     self.num_slot_labels)[active_loss]
+                    active_logits = slot_logits.view(-1, self.num_slot_labels)[
+                        active_loss
+                    ]
                     active_labels = slot_labels_ids.view(-1)[active_loss]
                     slot_loss = slot_loss_fct(active_logits, active_labels)
                 else:
                     slot_loss = slot_loss_fct(
-                        slot_logits.view(-1, self.num_slot_labels), slot_labels_ids.view(-1))
+                        slot_logits.view(-1, self.num_slot_labels),
+                        slot_labels_ids.view(-1),
+                    )
             total_loss += (1 - self.args.intent_loss_coef) * slot_loss
 
         # add hidden states and attention if they are here

@@ -119,17 +119,23 @@ class SlotClassifier(nn.Module):
         output_dim = self.attention_embedding_size  # base model
         if self.use_intent_context_concat:
             output_dim = self.attention_embedding_size
-            self.linear_out = nn.Linear(2 * attention_embedding_size, attention_embedding_size)
+            self.linear_out = nn.Linear(
+                2 * attention_embedding_size, attention_embedding_size
+            )
 
         elif self.use_intent_context_attn:
             output_dim = self.attention_embedding_size
             self.attention = Attention(attention_embedding_size)
 
-        self.linear_slot = nn.Linear(input_dim, self.attention_embedding_size, bias=False)
+        self.linear_slot = nn.Linear(
+            input_dim, self.attention_embedding_size, bias=False
+        )
 
         if self.use_intent_context_attn or self.use_intent_context_concat:
             # project intent vector and slot vector to have the same dimensions
-            self.linear_intent_context = nn.Linear(self.num_intent_labels, self.attention_embedding_size, bias=False)
+            self.linear_intent_context = nn.Linear(
+                self.num_intent_labels, self.attention_embedding_size, bias=False
+            )
             self.softmax = nn.Softmax(dim=-1)  # softmax layer for intent logits
 
             # self.linear_out = nn.Linear(2 * intent_embedding_size, intent_embedding_size)
@@ -150,7 +156,9 @@ class SlotClassifier(nn.Module):
         elif self.use_intent_context_attn:
             intent_context = self.softmax(intent_context)
             intent_context = self.linear_intent_context(intent_context)
-            intent_context = torch.unsqueeze(intent_context, 1)  # 1: query length (each token)
+            intent_context = torch.unsqueeze(
+                intent_context, 1
+            )  # 1: query length (each token)
             output, weights = self.attention(x, intent_context, attention_mask)
             x = output
         x = self.dropout(x)
